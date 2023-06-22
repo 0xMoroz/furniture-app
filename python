@@ -1,0 +1,22 @@
+class FurnitureApp:
+    def __init__(self):
+        self.instructions = {}
+
+    def add_furniture(self, name, instructions):
+        self.instructions[name] = instructions
+
+    def get_instructions(self, name):
+        return self.instructions.get(name, "Instructions not available.")
+
+# Create an instance of the FurnitureApp
+app = FurnitureApp()
+
+# Add furniture instructions
+app.add_furniture("Chair", "Step 1: Gather materials...")  # Replace with actual instructions
+app.add_furniture("Table", "Step 1: Gather materials...")  # Replace with actual instructions
+app.add_furniture("Bed", "Step 1: Gather materials...")  # Replace with actual instructions
+
+# Get instructions for a specific furniture item
+chair_instructions = app.get_instructions("Chair")
+print(chair_instructions)
+
